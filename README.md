@@ -1,2 +1,0 @@
-# Portofolio
-Website Portofolio Pribadi
