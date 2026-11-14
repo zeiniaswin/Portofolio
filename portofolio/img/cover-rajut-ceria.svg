@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="52" y1="30" x2="1140" y2="700" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF1E8"/>
+      <stop offset="1" stop-color="#F8DDE5"/>
+    </linearGradient>
+    <linearGradient id="yarn" x1="747" y1="198" x2="916" y2="390" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F7B5C4"/>
+      <stop offset="1" stop-color="#D85E84"/>
+    </linearGradient>
+    <linearGradient id="bag" x1="821" y1="276" x2="1001" y2="514" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F2A5B8"/>
+      <stop offset="1" stop-color="#D46A8A"/>
+    </linearGradient>
+    <filter id="shadow" x="626" y="74" width="526" height="594" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-opacity="0" result="background"/>
+      <feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+      <feOffset dy="16"/>
+      <feGaussianBlur stdDeviation="20"/>
+      <feComposite in2="SourceAlpha" operator="out"/>
+      <feColorMatrix values="0 0 0 0 0.35 0 0 0 0 0.12 0 0 0 0 0.2 0 0 0 0.15 0"/>
+      <feBlend in2="background" result="shadow"/>
+      <feBlend in="SourceGraphic" in2="shadow" result="shape"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="720" rx="34" fill="url(#bg)"/>
+  <circle cx="112" cy="112" r="96" fill="#FFF" opacity=".62"/>
+  <circle cx="1104" cy="624" r="146" fill="#F2C6D3" opacity=".55"/>
+  <path d="M0 548c160-48 293-35 419 30 88 46 154 65 235 47v95H0v-172Z" fill="#F1C7D2" opacity=".54"/>
+  <text x="86" y="126" fill="#A34463" font-family="Segoe UI,Arial,sans-serif" font-size="20" font-weight="700" letter-spacing="3">HANDMADE / 03</text>
+  <text x="82" y="266" fill="#563140" font-family="Segoe UI,Arial,sans-serif" font-size="62" font-weight="700">Rangkai</text>
+  <text x="82" y="342" fill="#563140" font-family="Segoe UI,Arial,sans-serif" font-size="62" font-weight="700">kehangatan.</text>
+  <text x="84" y="410" fill="#8C5D6C" font-family="Segoe UI,Arial,sans-serif" font-size="23" font-weight="500">Rajut Ceria</text>
+  <rect x="84" y="464" width="70" height="6" rx="3" fill="#D85E84"/>
+  <g filter="url(#shadow)">
+    <rect x="680" y="124" width="400" height="470" rx="46" fill="#FFFCFA"/>
+  </g>
+  <circle cx="1007" cy="196" r="24" fill="#FFE5D9"/>
+  <path d="M1007 208s-13-8-13-17a7 7 0 0 1 13-3 7 7 0 0 1 13 3c0 9-13 17-13 17Z" fill="#E87876"/>
+  <path d="M803 268c0-37 30-67 67-67s67 30 67 67" stroke="#A34463" stroke-width="16" stroke-linecap="round"/>
+  <path d="M786 288c0-15 12-27 27-27h120c15 0 27 12 27 27v194c0 24-19 43-43 43h-88c-24 0-43-19-43-43V288Z" fill="url(#bag)"/>
+  <path d="M790 324h166M790 359h166M790 394h166M790 429h166M790 464h166" stroke="#F9D7DF" stroke-width="9" stroke-linecap="round" opacity=".9"/>
+  <path d="M808 308v168M843 308v168M878 308v168M913 308v168M948 308v168" stroke="#C95779" stroke-width="8" stroke-linecap="round" opacity=".64"/>
+  <path d="M816 338c9 12 18 12 27 0s18-12 27 0 18 12 27 0 18-12 27 0 18 12 27 0" stroke="#FFF0F2" stroke-width="6" stroke-linecap="round"/>
+  <path d="M816 408c9 12 18 12 27 0s18-12 27 0 18 12 27 0 18-12 27 0 18 12 27 0" stroke="#FFF0F2" stroke-width="6" stroke-linecap="round"/>
+  <path d="M816 478c9 12 18 12 27 0s18-12 27 0 18 12 27 0 18-12 27 0 18 12 27 0" stroke="#FFF0F2" stroke-width="6" stroke-linecap="round"/>
+  <ellipse cx="986" cy="417" rx="58" ry="75" fill="url(#yarn)"/>
+  <path d="M933 390c28-33 76-47 105-21M929 417c33-25 78-31 111-13M934 445c30-15 71-18 103-8M948 472c23-7 48-8 73-3" stroke="#FFE4E9" stroke-width="8" stroke-linecap="round"/>
+  <path d="M949 363c20 27 33 60 41 109M978 343c10 37 17 81 18 148M1007 346c0 40-3 82-12 144" stroke="#C64F75" stroke-width="7" stroke-linecap="round" opacity=".66"/>
+  <path d="M1016 285 960 518" stroke="#C28A5B" stroke-width="9" stroke-linecap="round"/>
+  <path d="M1016 285c11-12 24-8 23 3 0 6-7 10-14 9" stroke="#9B6848" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="770" cy="226" r="8" fill="#E9B18A"/>
+  <path d="M770 208v36M752 226h36" stroke="#E9B18A" stroke-width="4" stroke-linecap="round"/>
+  <path d="M752 548h276" stroke="#F0D8DD" stroke-width="10" stroke-linecap="round"/>
+</svg>

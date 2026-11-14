@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="60" y1="40" x2="1120" y2="690" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E7F7F1"/>
+      <stop offset="1" stop-color="#CDEDE5"/>
+    </linearGradient>
+    <linearGradient id="ring" x1="720" y1="145" x2="1040" y2="560" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#24A99B"/>
+      <stop offset="1" stop-color="#087C78"/>
+    </linearGradient>
+    <filter id="shadow" x="620" y="78" width="520" height="590" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-opacity="0" result="background"/>
+      <feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+      <feOffset dy="16"/>
+      <feGaussianBlur stdDeviation="20"/>
+      <feComposite in2="SourceAlpha" operator="out"/>
+      <feColorMatrix values="0 0 0 0 0.03 0 0 0 0 0.25 0 0 0 0 0.22 0 0 0 0.14 0"/>
+      <feBlend in2="background" result="shadow"/>
+      <feBlend in="SourceGraphic" in2="shadow" result="shape"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="720" rx="34" fill="url(#bg)"/>
+  <circle cx="103" cy="616" r="135" fill="#B8E5DB" opacity=".55"/>
+  <circle cx="1125" cy="105" r="92" fill="#F7FFFC" opacity=".64"/>
+  <path d="M0 521C155 465 267 486 408 565C514 624 603 647 711 621V720H0V521Z" fill="#B9E6DC" opacity=".42"/>
+  <text x="86" y="126" fill="#087C78" font-family="Segoe UI,Arial,sans-serif" font-size="20" font-weight="700" letter-spacing="3">WELLNESS / 01</text>
+  <text x="82" y="265" fill="#123F3B" font-family="Segoe UI,Arial,sans-serif" font-size="64" font-weight="700">Ukur.</text>
+  <text x="82" y="342" fill="#123F3B" font-family="Segoe UI,Arial,sans-serif" font-size="64" font-weight="700">Pahami.</text>
+  <text x="82" y="419" fill="#123F3B" font-family="Segoe UI,Arial,sans-serif" font-size="64" font-weight="700">Seimbangkan.</text>
+  <rect x="84" y="478" width="68" height="6" rx="3" fill="#15998F"/>
+  <text x="84" y="526" fill="#456E69" font-family="Segoe UI,Arial,sans-serif" font-size="23" font-weight="500">Kalkulator Kesehatan</text>
+  <g filter="url(#shadow)">
+    <rect x="680" y="124" width="400" height="470" rx="46" fill="#FBFFFD"/>
+  </g>
+  <circle cx="880" cy="330" r="122" stroke="#D7EEE8" stroke-width="30"/>
+  <circle cx="880" cy="330" r="122" stroke="url(#ring)" stroke-width="30" stroke-linecap="round" stroke-dasharray="475 291" transform="rotate(-90 880 330)"/>
+  <circle cx="880" cy="330" r="86" fill="#F0FAF7"/>
+  <path d="M835 334h28l16-30 27 59 19-37h20" stroke="#0E8C82" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="880" y="478" text-anchor="middle" fill="#456E69" font-family="Segoe UI,Arial,sans-serif" font-size="17" font-weight="600" letter-spacing="1.5">HEALTH AT A GLANCE</text>
+  <circle cx="1000" cy="185" r="27" fill="#FFE5D9"/>
+  <path d="M1000 203s-17-10-17-22a9 9 0 0 1 17-4 9 9 0 0 1 17 4c0 12-17 22-17 22Z" fill="#E87861"/>
+  <rect x="738" y="524" width="90" height="12" rx="6" fill="#D3ECE6"/>
+  <rect x="738" y="524" width="58" height="12" rx="6" fill="#15998F"/>
+  <circle cx="1021" cy="527" r="21" fill="#E7F7F1"/>
+  <path d="m1012 527 6 6 12-14" stroke="#087C78" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

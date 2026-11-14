@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="56" y1="42" x2="1156" y2="698" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F3ECFF"/>
+      <stop offset="1" stop-color="#E1D6FB"/>
+    </linearGradient>
+    <linearGradient id="can" x1="755" y1="174" x2="901" y2="554" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFCF78"/>
+      <stop offset="1" stop-color="#EF8E50"/>
+    </linearGradient>
+    <linearGradient id="bottle" x1="956" y1="176" x2="1088" y2="554" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#83D9C6"/>
+      <stop offset="1" stop-color="#2A9F91"/>
+    </linearGradient>
+    <filter id="shadow" x="636" y="76" width="518" height="592" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-opacity="0" result="background"/>
+      <feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+      <feOffset dy="16"/>
+      <feGaussianBlur stdDeviation="20"/>
+      <feComposite in2="SourceAlpha" operator="out"/>
+      <feColorMatrix values="0 0 0 0 0.2 0 0 0 0 0.13 0 0 0 0 0.38 0 0 0 0.16 0"/>
+      <feBlend in2="background" result="shadow"/>
+      <feBlend in="SourceGraphic" in2="shadow" result="shape"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="720" rx="34" fill="url(#bg)"/>
+  <circle cx="111" cy="104" r="94" fill="#FFF" opacity=".52"/>
+  <circle cx="1102" cy="626" r="145" fill="#CFC0F3" opacity=".52"/>
+  <path d="M0 547c159-48 293-35 419 30 88 46 154 65 235 47v96H0v-173Z" fill="#D4C7F4" opacity=".54"/>
+  <text x="86" y="126" fill="#6744A9" font-family="Segoe UI,Arial,sans-serif" font-size="20" font-weight="700" letter-spacing="3">INVENTORY / 02</text>
+  <text x="82" y="266" fill="#342A52" font-family="Segoe UI,Arial,sans-serif" font-size="60" font-weight="700">Produk rapi.</text>
+  <text x="82" y="340" fill="#342A52" font-family="Segoe UI,Arial,sans-serif" font-size="60" font-weight="700">Stok terkendali.</text>
+  <text x="84" y="409" fill="#6E6387" font-family="Segoe UI,Arial,sans-serif" font-size="23" font-weight="500">Data Produk Minuman</text>
+  <rect x="84" y="464" width="70" height="6" rx="3" fill="#8557D8"/>
+  <g filter="url(#shadow)">
+    <rect x="680" y="124" width="400" height="470" rx="46" fill="#FFFCFF"/>
+  </g>
+  <path d="M742 483h282v46H742z" fill="#EDE5FA"/>
+  <path d="M742 483h282" stroke="#C8B7E8" stroke-width="5" stroke-linecap="round"/>
+  <path d="M774 483v-82h52v82M836 483V365h58v118M904 483V424h42v59M960 483V337h54v146" stroke="#A896CC" stroke-width="13" stroke-linejoin="round"/>
+  <rect x="750" y="355" width="42" height="128" rx="15" fill="#8A66C8"/>
+  <rect x="761" y="337" width="20" height="24" rx="5" fill="#7250AC"/>
+  <path d="M758 396h26v48h-26z" fill="#C8B5EA"/>
+  <rect x="814" y="218" width="128" height="282" rx="30" fill="url(#can)"/>
+  <ellipse cx="878" cy="221" rx="64" ry="15" fill="#FFE3A6"/>
+  <ellipse cx="878" cy="221" rx="44" ry="7" fill="#D79852"/>
+  <path d="M814 262h128" stroke="#FFF0CF" stroke-width="8" opacity=".72"/>
+  <circle cx="878" cy="365" r="40" fill="#FFF0D5" opacity=".92"/>
+  <path d="M878 339s-24 28-24 42a24 24 0 0 0 48 0c0-14-24-42-24-42Z" fill="#E87861"/>
+  <rect x="978" y="271" width="92" height="229" rx="30" fill="url(#bottle)"/>
+  <rect x="1001" y="235" width="46" height="49" rx="12" fill="#2A9F91"/>
+  <rect x="1008" y="220" width="32" height="23" rx="8" fill="#19786F"/>
+  <path d="M979 351h90v69h-90z" fill="#F8FFFC" opacity=".9"/>
+  <path d="M1000 386h48" stroke="#4F9F92" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="1030" cy="329" r="18" fill="#B4F0DF" opacity=".8"/>
+  <rect x="736" y="548" width="286" height="10" rx="5" fill="#E3DCF0"/>
+  <rect x="736" y="548" width="198" height="10" rx="5" fill="#8557D8"/>
+  <circle cx="1006" cy="553" r="18" fill="#F1E8FF"/>
+  <path d="m999 553 5 5 10-11" stroke="#6744A9" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zeini Aswin Rangkuti — Personal Portfolio</title>
+  <meta name="description" content="Portofolio Zeini Aswin Rangkuti, siswa Rekayasa Perangkat Lunak SMKN 20 Jakarta dengan minat pada front-end, UI/UX, dan pengembangan web.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Zeini Aswin Rangkuti — Personal Portfolio">
+  <meta property="og:description" content="Siswa Rekayasa Perangkat Lunak SMKN 20 Jakarta. Lihat proyek, keahlian, dan kontak saya.">
+  <meta name="theme-color" content="#2563eb">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <!-- Gaya: css/style.css | Perilaku: js/script.js | Gambar: img/ (semua lokal, tanpa internet) -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Library pre-existing: jQuery 3.6.1 (MIT, lokal). Harus dimuat SEBELUM script.js; atribut defer menjaga urutan. -->
+  <script src="js/vendor/jquery-3.6.1.min.js" defer></script>
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+
+  <!-- ===== NAVBAR: logo, menu desktop, tombol tema, tombol menu mobile ===== -->
+  <header class="navbar">
+    <div class="container navbar-inner">
+      <a class="brand" href="#home">
+        <span class="brand-mark">ZR</span>
+        <span class="brand-text"><strong>Zeini Aswin</strong><small>Portfolio</small></span>
+      </a>
+      <nav class="nav-links" aria-label="Navigasi utama">
+        <a class="nav-link" href="#about">Profil</a>
+        <a class="nav-link" href="#projects">Proyek</a>
+        <a class="nav-link" href="#education">Pendidikan</a>
+        <a class="nav-link" href="#skills">Keahlian</a>
+        <a class="nav-link" href="#contact">Kontak</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="icon-btn" id="theme-toggle" type="button" aria-pressed="false" aria-label="Aktifkan mode gelap" title="Ganti tema">☾</button>
+        <button class="icon-btn menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Buka menu navigasi">☰</button>
+      </div>
+    </div>
+    <!-- Menu mobile: atribut hidden dibuka/tutup oleh script.js -->
+    <nav class="mobile-menu" id="mobile-menu" aria-label="Navigasi mobile" hidden>
+      <a href="#about">Profil</a>
+      <a href="#projects">Proyek</a>
+      <a href="#education">Pendidikan</a>
+      <a href="#skills">Keahlian</a>
+      <a href="#contact">Kontak</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ===== HERO: perkenalan singkat + foto profil ===== -->
+    <section class="hero" id="home">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="badge">Front-End Developer</p>
+          <h1>Zeini Aswin <span class="gradient-text">Rangkuti</span></h1>
+          <p class="tagline">“Turning curiosity into creation”</p>
+          <div class="hero-buttons">
+            <a class="btn btn-dark" href="#about">Kenali Saya</a>
+            <a class="btn btn-light" href="#contact">Hubungi Saya</a>
+            <a class="btn btn-primary" href="cv/CV_Zeini_Aswin.pdf" download="CV_Zeini_Aswin.pdf">Download CV</a>
+          </div>
+        </div>
+        <div class="photo-frame">
+          <div class="photo-card">
+            <img id="profile-img" src="img/foto-profil.jpg" alt="Zeini Aswin Rangkuti" width="640" height="640">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROFIL ===== -->
+    <section class="section section-a" id="about">
+      <div class="container narrow">
+        <header class="section-head">
+          <h2>Mengenal Saya Lebih Dekat</h2>
+        </header>
+        <div class="card about-card">
+          <p>Saya <strong>Zeini Aswin Rangkuti</strong>, siswa <strong>Rekayasa Perangkat Lunak di SMKN 20 Jakarta</strong> yang fokus pada <strong>pengembangan antarmuka web, desain responsif, dan pengalaman pengguna</strong>. Saya tertarik merancang tampilan yang rapi, mudah dipahami, dan fungsional.</p>
+          <p>Saya senang belajar melalui praktik dan terus mencoba sampai memahami suatu konsep. Dalam setiap proyek, saya memperhatikan kualitas pengalaman pengguna, struktur kode, reusable components, serta penerapan best practices agar hasil lebih terorganisir dan mudah dikembangkan.</p>
+          <p>Ke depan, saya ingin terus mengasah kemampuan dalam merancang antarmuka yang menarik dan mudah digunakan, serta menciptakan produk digital yang responsif dan bermanfaat.</p>
+          <p class="chip">Jakarta, Indonesia</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROYEK: cover ilustratif dan detail proyek ===== -->
+    <section class="section section-b" id="projects">
+      <div class="container">
+        <header class="section-head">
+          <h2>Proyek Yang Pernah Dibuat</h2>
+          <p>Tiga proyek yang saya buat menunjukkan kreativitas dan perhatian saya pada produk yang menarik serta mudah digunakan.</p>
+        </header>
+        <div class="project-grid">
+          <article class="card project-card">
+            <div class="shot shot--art"><img src="img/cover-kalkulator.svg" alt="Ilustrasi konsep kesehatan dengan indikator BMI dan denyut nadi" loading="lazy"></div>
+            <div class="project-body">
+              <h3>Kalkulator Kesehatan</h3>
+              <a class="btn-github" href="https://github.com/zeiniaswin/kalkulator-kesehatan-twelvetech" target="_blank" rel="noopener noreferrer">Lihat di GitHub →</a>
+            </div>
+          </article>
+          <article class="card project-card">
+            <div class="shot shot--art"><img src="img/cover-produk-minuman.svg" alt="Ilustrasi konsep pengelolaan produk minuman dan stok" loading="lazy"></div>
+            <div class="project-body">
+              <h3>Data Produk Minuman</h3>
+              <a class="btn-github" href="https://github.com/zeiniaswin/aplikasi-data-produk" target="_blank" rel="noopener noreferrer">Lihat di GitHub →</a>
+            </div>
+          </article>
+          <article class="card project-card">
+            <div class="shot shot--art"><img src="img/cover-rajut-ceria.svg" alt="Ilustrasi gulungan benang rajut dan kain rajutan untuk usaha Rajut Ceria" loading="lazy"></div>
+            <div class="project-body">
+              <h3>Rajut Ceria</h3>
+              <a class="btn-github" href="https://github.com/zeiniaswin/rajut-ceria" target="_blank" rel="noopener noreferrer">Lihat di GitHub →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PENDIDIKAN: garis waktu (urut dari terbaru) ===== -->
+    <section class="section section-a" id="education">
+      <div class="container narrow">
+        <header class="section-head"><h2>Riwayat Pendidikan</h2></header>
+        <div class="timeline">
+          <article class="t-item">
+            <div class="card edu-card edu-row edu-main">
+              <div>
+                <p class="chip">2024 — Sekarang</p>
+                <h3>SMKN 20 JAKARTA</h3>
+                <p class="edu-sub">Sekolah Menengah Kejuruan | Rekayasa Perangkat Lunak</p>
+              </div>
+              <div class="logo-box"><img src="img/logo-smkn-20-jakarta.jpg" alt="Logo SMKN 20 Jakarta" width="200" height="200"></div>
+            </div>
+          </article>
+          <article class="t-item">
+            <div class="card edu-card edu-row">
+              <div>
+                <p class="chip chip-gray">2021 — 2024</p>
+                <h3>SMPN 178 JAKARTA</h3>
+                <p class="edu-sub">Sekolah Menengah Pertama</p>
+              </div>
+              <div class="logo-box"><img src="img/logo-smpn-178-jakarta.jpg" alt="Logo SMPN 178 Jakarta" width="240" height="240" loading="lazy"></div>
+            </div>
+          </article>
+          <article class="t-item">
+            <div class="card edu-card edu-row">
+              <div>
+                <p class="chip chip-gray">2016 — 2021</p>
+                <h3>SDN 013</h3>
+                <p class="edu-sub">Sekolah Dasar</p>
+              </div>
+              <div class="logo-box"><img src="img/logo-sdn-013.jpg" alt="Logo SDN 013" width="240" height="240" loading="lazy"></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== KEAHLIAN + BAHASA ===== -->
+    <section class="section section-b" id="skills">
+      <div class="container narrow">
+        <header class="section-head"><h2>Keahlian &amp; Kemampuan</h2></header>
+        <div class="card skills-card">
+          <p class="skills-label">Hard Skills</p>
+          <!-- Isi daftar ini dibuat ulang dari array DAFTAR_KEAHLIAN di js/script.js (isi statis = cadangan) -->
+          <ul class="skill-list" id="skill-list">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Laravel</li>
+            <li>MySQL</li>
+            <li>Figma</li>
+          </ul>
+        </div>
+        <div class="card skills-card skills-card--soft">
+          <p class="skills-label">Soft Skills</p>
+          <ul class="skill-list" id="soft-skill-list">
+            <li>Cepat Belajar</li>
+            <li>Kerja Sama Tim</li>
+            <li>Komunikasi</li>
+            <li>Manajemen Waktu</li>
+            <li>Pemecahan Masalah</li>
+            <li>Teliti &amp; Detail</li>
+          </ul>
+        </div>
+        <div class="card lang-card">
+          <strong>Bahasa:</strong>
+          <span class="chip chip-gray">Indonesia (Penutur Asli)</span>
+          <span class="chip chip-gray">Inggris (Dasar-Menengah)</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== KONTAK + FOOTER ===== -->
+  <footer class="contact" id="contact">
+    <div class="container narrow">
+      <h2>Mari Terhubung &amp; Berkolaborasi</h2>
+      <p class="contact-intro">Terbuka untuk diskusi seputar teknologi, berbagi ide, dan kolaborasi proyek pembelajaran.</p>
+      <div class="contact-links">
+        <a class="contact-card" href="mailto:zeinirn34@gmail.com"><span class="contact-icon">@</span>Kirim Email</a>
+        <a class="contact-card" href="https://github.com/zeiniaswin" target="_blank" rel="noopener noreferrer"><span class="contact-icon">GH</span>Profil GitHub</a>
+        <a class="contact-card" href="https://www.linkedin.com/in/zeini-aswin-11727a440" target="_blank" rel="noopener noreferrer"><span class="contact-icon">in</span>Profil LinkedIn</a>
+      </div>
+      <!-- Form kontak: divalidasi di js/script.js, lalu membuka aplikasi email -->
+      <form class="contact-form" id="contact-form" novalidate>
+        <h3>Kirim Pesan</h3>
+        <label for="nama">Nama</label>
+        <input id="nama" name="nama" type="text" autocomplete="name" required>
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" autocomplete="email" required>
+        <label for="pesan">Pesan</label>
+        <textarea id="pesan" name="pesan" rows="4" required></textarea>
+        <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        <button class="btn btn-primary" type="submit">Kirim lewat email</button>
+      </form>
+      <p class="copyright">© <span id="current-year">2026</span> Zeini Aswin Rangkuti. Hak cipta dilindungi undang-undang.</p>
+    </div>
+  </footer>
+
+  <!-- Tombol kembali ke atas (muncul setelah halaman di-scroll) -->
+  <button class="to-top" id="to-top" type="button" aria-label="Kembali ke atas">↑</button>
+</body>
+</html>

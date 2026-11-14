@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV Zeini Aswin Rangkuti</title>
+    <style>
+      :root {
+        --bg: #f4f7fb;
+        --panel: #ffffff;
+        --primary: #1d4ed8;
+        --primary-soft: #dbeafe;
+        --text: #172033;
+        --muted: #52607a;
+        --line: #dfe7f3;
+        --accent: #0f172a;
+      }
+
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: "Segoe UI", Arial, sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        line-height: 1.55;
+      }
+
+      .page {
+        width: 210mm;
+        min-height: 297mm;
+        margin: 0 auto;
+        background: var(--panel);
+        box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+      }
+
+      .header {
+        background: linear-gradient(135deg, #0f172a 0%, #1d4ed8 100%);
+        color: white;
+        padding: 26px 36px 22px;
+      }
+
+      .top-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 24px;
+      }
+
+      .name {
+        font-size: 30px;
+        font-weight: 800;
+        letter-spacing: 0.02em;
+        margin-bottom: 4px;
+      }
+
+      .role {
+        font-size: 14px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: rgba(255,255,255,0.8);
+      }
+
+      .contact {
+        display: grid;
+        gap: 6px;
+        font-size: 12px;
+        text-align: right;
+      }
+
+      .contact a {
+        color: white;
+        text-decoration: none;
+      }
+
+      .content {
+        display: grid;
+        grid-template-columns: 1.1fr 2fr;
+        gap: 0;
+      }
+
+      .sidebar {
+        background: #f8fafc;
+        border-right: 1px solid var(--line);
+        padding: 24px 24px 30px 36px;
+      }
+
+      .main {
+        padding: 24px 36px 30px 28px;
+      }
+
+      .section {
+        margin-bottom: 24px;
+      }
+
+      .section-title {
+        font-size: 15px;
+        font-weight: 800;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: var(--primary);
+        margin: 0 0 10px;
+        padding-bottom: 6px;
+        border-bottom: 2px solid var(--line);
+      }
+
+      .summary {
+        font-size: 13px;
+        color: var(--muted);
+      }
+
+      .skill-list,
+      .mini-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+
+      .skill-list li,
+      .mini-list li {
+        background: var(--primary-soft);
+        color: var(--primary);
+        border: 1px solid #bfdbfe;
+        padding: 6px 10px;
+        border-radius: 999px;
+        font-size: 12px;
+        font-weight: 700;
+      }
+
+      .info-block {
+        margin-top: 12px;
+      }
+
+      .info-label {
+        font-size: 12px;
+        font-weight: 800;
+        color: var(--muted);
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        margin-bottom: 4px;
+      }
+
+      .info-value {
+        font-size: 13px;
+        color: var(--text);
+      }
+
+      .timeline {
+        margin: 0;
+        padding-left: 18px;
+      }
+
+      .timeline li {
+        margin-bottom: 16px;
+      }
+
+      .timeline h4 {
+        margin: 0 0 2px;
+        font-size: 14px;
+      }
+
+      .timeline .meta {
+        font-size: 12px;
+        font-weight: 700;
+        color: var(--primary);
+      }
+
+      .timeline p {
+        margin: 4px 0 0;
+        font-size: 12.5px;
+        color: var(--muted);
+      }
+
+      .project-item {
+        margin-bottom: 18px;
+      }
+
+      .project-item h4 {
+        margin: 0 0 6px;
+        font-size: 15px;
+      }
+
+      .project-item p {
+        margin: 0;
+        font-size: 13px;
+        color: var(--muted);
+      }
+
+      .project-item ul {
+        margin: 8px 0 0 18px;
+        padding: 0;
+        color: var(--muted);
+        font-size: 12.5px;
+      }
+
+      @media print {
+        body {
+          background: white;
+        }
+
+        .page {
+          box-shadow: none;
+          margin: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <div class="top-row">
+          <div>
+            <div class="name">Zeini Aswin Rangkuti</div>
+            <div class="role">Student • Software Developer</div>
+          </div>
+          <div class="contact">
+            <div>Jakarta, Indonesia</div>
+            <div><a href="mailto:zeinirn34@gmail.com">zeinirn34@gmail.com</a></div>
+            <div><a href="https://github.com/zeiniaswin" target="_blank">github.com/zeiniaswin</a></div>
+            <div><a href="https://www.linkedin.com/in/zeini-aswin-11727a440" target="_blank">linkedin.com/in/zeini-aswin</a></div>
+          </div>
+        </div>
+      </header>
+
+      <div class="content">
+        <aside class="sidebar">
+          <div class="section">
+            <h3 class="section-title">Profil</h3>
+            <p class="summary">
+              Saya adalah siswa Rekayasa Perangkat Lunak di SMKN 20 Jakarta yang tertarik pada pengembangan aplikasi,
+              desain antarmuka, dan pemecahan masalah teknis. Saya aktif belajar secara mandiri dan terus mengasah
+              kemampuan dalam membangun produk yang bermanfaat dan rapi.
+            </p>
+          </div>
+
+          <div class="section">
+            <h3 class="section-title">Keahlian</h3>
+            <ul class="skill-list">
+              <li>Flutter</li>
+              <li>Dart</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>MySQL</li>
+              <li>GitHub</li>
+              <li>OOP</li>
+            </ul>
+          </div>
+
+          <div class="section">
+            <h3 class="section-title">Soft Skills</h3>
+            <ul class="skill-list">
+              <li>Belajar Cepat</li>
+              <li>Kerja Sama</li>
+              <li>Komunikasi</li>
+              <li>Manajemen Waktu</li>
+              <li>Teliti</li>
+              <li>Problem Solving</li>
+            </ul>
+          </div>
+
+          <div class="section">
+            <h3 class="section-title">Bahasa</h3>
+            <div class="info-block">
+              <div class="info-label">Indonesia</div>
+              <div class="info-value">Penutur asli</div>
+            </div>
+            <div class="info-block">
+              <div class="info-label">Inggris</div>
+              <div class="info-value">Dasar hingga menengah</div>
+            </div>
+          </div>
+        </aside>
+
+        <main class="main">
+          <div class="section">
+            <h3 class="section-title">Tujuan</h3>
+            <p class="summary">
+              Saya ingin terus belajar dan berkembang di bidang teknologi, khususnya pengembangan aplikasi dan perangkat lunak.
+              Saya berkomitmen untuk membangun kemampuan teknis, kerja profesional, dan kontribusi yang bermanfaat dalam
+              lingkungan kerja maupun kolaborasi proyek.
+            </p>
+          </div>
+
+          <div class="section">
+            <h3 class="section-title">Pendidikan</h3>
+            <ul class="timeline">
+              <li>
+                <div class="meta">2024 — Sekarang</div>
+                <h4>SMKN 20 Jakarta</h4>
+                <p>Rekayasa Perangkat Lunak</p>
+              </li>
+              <li>
+                <div class="meta">2021 — 2024</div>
+                <h4>SMPN 178 Jakarta</h4>
+                <p>Sekolah Menengah Pertama</p>
+              </li>
+              <li>
+                <div class="meta">2016 — 2021</div>
+                <h4>SDN 013</h4>
+                <p>Sekolah Dasar</p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="section">
+            <h3 class="section-title">Proyek</h3>
+            <div class="project-item">
+              <h4>Kalkulator Kesehatan</h4>
+              <p>Aplikasi Flutter untuk menghitung BMI, BMR/TDEE, serta kebutuhan air harian.</p>
+              <ul>
+                <li>Mendesain antarmuka pengguna</li>
+                <li>Membuat logika perhitungan kesehatan</li>
+                <li>Mengembangkan visualisasi gaude/indikator dinamis</li>
+              </ul>
+            </div>
+
+            <div class="project-item">
+              <h4>Data Produk Minuman</h4>
+              <p>Aplikasi katalog produk minuman dengan konsep pemrograman berorientasi objek.</p>
+              <ul>
+                <li>Menggunakan struktur class dan objek untuk mengelola data produk</li>
+                <li>Menampilkan status stok secara otomatis</li>
+                <li>Memungkinkan pengelolaan data produk dengan rapi</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="section">
+            <h3 class="section-title">Minat</h3>
+            <ul class="mini-list">
+              <li>UI/UX</li>
+              <li>Flutter</li>
+              <li>Web Development</li>
+              <li>Software Engineering</li>
+              <li>Problem Solving</li>
+            </ul>
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>
